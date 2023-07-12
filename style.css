@@ -1,0 +1,97 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .nav-bar {
+    background-color: #FF5722;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+  }
+   .nav-bar:hover{
+    width: 300px;
+   }
+    .head-indent{ margin-left: 90px;
+   }
+
+  .nav-link {
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    
+  }
+
+  .nav-link:hover {
+    text-decoration: underline;
+    width:90px;
+  }
+  .color{
+      color: #fff;
+  }
+  .recipe-card {
+    background-color: #1a202c;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
+    position: relative;
+    z-index: 1;
+  }
+
+  .recipe-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: -1;
+  }
+ 
+  .recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
+  }
+
+  .recipe-card:hover:before {
+    opacity: 1;
+  }
+  .indent{
+      margin-left :150px;
+  }
+  .image-indent{
+      margin-left: 500px;
+      
+  }
+  .mar-indent{
+      margin-left :200px;
+  }
+  .ab-indent{
+    margin-left: 70px;
+  }
+  hr {
+      width: 100%;
+      
+  }
+  footer {
+text-align: center;
+padding: 3px;
+background-color:rgba(255, 255, 255, 0.2);
+color: white;
+padding: 10px;
+}
+.inline-img {
+    display: inline-block;
+    vertical-align: middle;
+  }
